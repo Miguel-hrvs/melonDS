@@ -17,6 +17,7 @@
 */
 
 #include <string.h>
+#include <QDebug> 
 
 #include <optional>
 #include <cmath>

@@ -1104,7 +1104,7 @@ bool EmuInstance::updateConsole(UpdateConsoleNDSArgs&& _ndsargs, UpdateConsoleGB
     };
     auto gdbargs = gdbopt.GetBool("Enable") ? std::make_optional(_gdbargs) : std::nullopt;
 #else
-    optional<GDBArgs> gdbargs = std::nullopt;
+    std::optional<GDBArgs> gdbargs = std::nullopt;
 #endif
 
     NDSArgs ndsargs {
